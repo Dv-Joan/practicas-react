@@ -16,7 +16,6 @@ const reducer = (state, action) => {
 function ReducerFunction() {
   const [counter, setCounter] = useState(0);
   const [state, dispatch] = useReducer(reducer, initialState);
-
   return (
     <div className="flex justify-center gap-8">
       <div className="bg-slate-200 mt-3 w-96 py-4 rounded-lg shadow-xl">

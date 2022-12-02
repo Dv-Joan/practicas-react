@@ -1,7 +1,6 @@
-import { useReducer } from "react";
 import reactLogo from "./assets/react.svg";
 import ReducerFunction from "./components/ReducerFunction";
-
+import UseEffect from "./components/UseEffect";
 function App() {
   return (
     <div className="App text-center">
@@ -17,6 +16,9 @@ function App() {
       </div>
       <div className="mt-4 text-xl">
         <ReducerFunction />
+      </div>
+      <div className="mt-4 text-xl">
+        <UseEffect />
       </div>
     </div>
   );
