@@ -1,10 +1,11 @@
 import reactLogo from "./assets/react.svg";
 import ReducerFunction from "./components/ReducerFunction";
 import UseEffect from "./components/UseEffect";
+import Fetch from "./components/Fetch";
 function App() {
   return (
     <div className="App text-center">
-      <div className="flex gap-4 justify-center m-5 mb-12">
+      <div className="flex gap-4 justify-center m-5 mb-36">
         <div>
           <img src={reactLogo} alt="react logo" className="w-10 mt-3" />
         </div>
@@ -19,6 +20,9 @@ function App() {
       </div>
       <div className="mt-4 text-xl">
         <UseEffect />
+      </div>
+      <div className="mt-4 text-xl">
+        <Fetch />
       </div>
     </div>
   );

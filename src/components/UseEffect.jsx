@@ -43,66 +43,32 @@ function UseEffect() {
     getArtData();
   }, []);
   return (
-    <div>
-      <h1>useEffect</h1>
-      <form onSubmit={handelSubmit}>
-        <label htmlFor="name" className="text-gray-500 mr-3 ">
-          Name
-        </label>
-        <input
-          className="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
-          type="text"
-          name="name"
-          id="name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-        <button
-          type="submit"
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl ml-3"
-        >
-          Submit
-        </button>
-      </form>
-      <div className="mt-4">
-        <h3 className="text-2xl">
-          Fetch RandomImage Status :
-          <span className="bg-green-500 text-white px-3 mx-1 rounded">
-            {images.status}
-          </span>
-        </h3>
-        {loading ? (
-          <Loader />
-        ) : (
-          <img src={images} alt="random image" className="w-1/2" />
-        )}
+    <>
+      <span className="text-3xl bg-slate-500 text-white py-1.5 pl-3 pr-3 rounded-lg drop-shadow-lg">
+        ❌ useEffect
+      </span>
+      <div className="mb-36 mt-10">
+        <form onSubmit={handelSubmit}>
+          <label htmlFor="name" className="text-gray-500 mr-3 ">
+            Name
+          </label>
+          <input
+            className="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
+            type="text"
+            name="name"
+            id="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <button
+            type="submit"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl ml-3"
+          >
+            Submit
+          </button>
+        </form>
       </div>
-      <div className="mt-4">
-        <h3 className="text-2xl">
-          Fetch ArtWork Status :
-          <span className="bg-green-500 text-white px-3 mx-1 rounded">
-            Great Success
-          </span>
-        </h3>
-        {loading ? (
-          <Loader />
-        ) : (
-          <ul className="text-left">
-            {artworks.map((artwork) => (
-              <li className="mb-10" key={artwork.id}>
-                <h2>Title: {artwork.title}</h2>
-                <h3>Origin : {artwork.place_of_origin}</h3>
-                {/*  <img
-                  src={artwork.thumbnail.lqip}
-                  alt={artwork.thumbnail.alt_text}
-                /> */}
-                <hr />
-              </li>
-            ))}
-          </ul>
-        )}
-      </div>
-    </div>
+    </>
   );
 }
 
