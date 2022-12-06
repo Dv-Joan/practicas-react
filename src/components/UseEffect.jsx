@@ -47,7 +47,7 @@ function UseEffect() {
       <span className="text-3xl bg-slate-500 text-white py-1.5 pl-3 pr-3 rounded-lg drop-shadow-lg">
         ❌ useEffect
       </span>
-      <div className="mb-36 mt-10">
+      <div className="mb-36 mt-10 bg-slate-200 w-1/3 py-4 rounded-lg shadow-xl">
         <form onSubmit={handelSubmit}>
           <label htmlFor="name" className="text-gray-500 mr-3 ">
             Name

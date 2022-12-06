@@ -2,6 +2,7 @@ import reactLogo from "./assets/react.svg";
 import ReducerFunction from "./components/ReducerFunction";
 import UseEffect from "./components/UseEffect";
 import Fetch from "./components/Fetch";
+import UseFormHook from "./components/UseFormHook";
 function App() {
   return (
     <div className="App text-center">
@@ -23,6 +24,9 @@ function App() {
       </div>
       <div className="mt-4 text-xl">
         <Fetch />
+      </div>
+      <div className="mt-4 text-xl">
+        <UseFormHook />
       </div>
     </div>
   );
