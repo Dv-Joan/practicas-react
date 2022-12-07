@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       fontFamily: {
         Roboto: ["Roboto"],
+        Saira: ["Saira"],
+        Dancing: ["Dancing Script"],
+        Cedarville: ["Cedarville Cursive"],
       },
     },
   },

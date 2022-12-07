@@ -31,11 +31,11 @@ function Fetch() {
           <div className=" flex flex-wrap gap-4 justify-center bg-neutral-200 rounded-xl ">
             {artworks.map((artwork) => (
               <div className="mt-16" key={artwork.id}>
-                <img
+                {/*  <img
                   src={artwork.thumbnail.lqip}
                   alt="artwork"
                   className="w-64 h-64 rounded-xl drop-shadow-lg hover:scale-110 transform transition duration-500 ease-in-out mx-5"
-                />
+                /> */}
                 <div className="mt-5 mb-16 bg-neutral-100 rounded-lg px-3 py-1">
                   <h2 className="text-sm italic">{artwork.title}</h2>
                   <h2 className="text-sm italic">
